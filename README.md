@@ -1,5 +1,9 @@
 # feynman-reading 🧠
 
+[![Release](https://img.shields.io/github/v/release/Dargeryu/feynman-reading-skill)](https://github.com/Dargeryu/feynman-reading-skill/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Bilingual](https://img.shields.io/badge/lang-%E4%B8%AD%E8%8B%B1%E5%8F%8C%E8%AA%9E-blue)]()
+
 一个 AI Agent 用的阅读 skill：**费曼-芒格超级阅读法 v2.0 (Feynman-Munger Cognitive Reading)**。
 A reading skill for AI agents: **Feynman-Munger Cognitive Reading v2.0**.
 
