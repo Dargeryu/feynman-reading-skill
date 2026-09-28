@@ -1,71 +1,120 @@
 ---
 name: feynman-reading
-description: 运用费曼学习法、《认知天性》与芒格多元思维模型深度讲解书籍。融合生成式破冰、跨学科模型映射（复利/冗余/逆向）、合意困难检索测试及知识格栅长故事，实现知识的硬核内化。/ Explains books in depth with the Feynman Technique, "Make It Stick," and Munger's latticework of mental models — generative ice-breakers, cross-disciplinary model mapping (compounding/redundancy/inversion), desirable-difficulty retrieval tests, and latticework long stories for hardcore internalization.
+description: 费曼-芒格超级阅读法 v2.0：顺着《思考，快与慢》揭示的大脑运作模式，用费曼学习法讲透整本书——全书结构精髓总览、全概念逐个故事化、多媒体呈现（图文/音频/视频/超链接）、分级检索测试、最终整合成一个长篇故事，让大脑自然轻松地掌握。/ Feynman-Munger Super Reading v2.0: engineered around the brain's operating patterns from "Thinking, Fast and Slow" — Feynman-style book mastery via full-book overview, story-per-concept, multimedia (images/audio/video/hyperlinks), leveled retrieval tests, and one grand integrative story. Effortless for the brain, hardcore for memory.
 ---
 
-# 费曼-芒格超级阅读法 (Feynman-Munger Cognitive Reading)
+# 费曼-芒格超级阅读法 (Feynman-Munger Cognitive Reading) v2.0
 
-融合理查德·费曼的"降维解释"、《思考，快与慢》的"认知负荷管理"、《认知天性》的"合意困难与生成效应"，以及查理·芒格的"多元思维模型网格"，将单薄的书本知识转化为深植于大脑的跨学科智慧网络。
+> 让大脑毫不费力地吃透一本书。
+> Make mastering a book feel effortless for the brain.
 
-This skill fuses Richard Feynman's "explain it simply," the cognitive-load management of *Thinking, Fast and Slow*, the "desirable difficulties and generation effect" of *Make It Stick*, and Charlie Munger's "latticework of mental models" — turning thin book knowledge into a cross-disciplinary wisdom network rooted deep in the brain.
+本 skill 融合四套思想体系：费曼的"降维解释"、查理·芒格的"多元思维模型网格"、《认知天性》的"合意困难与生成效应"、以及《思考，快与慢》揭示的**人脑运作模式**。讲解的每一个环节都按大脑的喜好来设计：先让大脑爱上，再让大脑记住，最后让大脑会用。
 
-**语言 / Language**：默认使用中文讲解；若用户要求英文，全文切换为英文。讲解时保持中英术语对照（如：生成效应 Generation Effect）。/ Explain in Chinese by default; switch fully to English when the user asks. Keep Chinese–English term pairs (e.g. 生成效应 / Generation Effect) throughout.
+This skill fuses four systems: Feynman's "explain it simply," Charlie Munger's "latticework of mental models," the "desirable difficulties & generation effect" of *Make It Stick*, and the **brain's operating patterns** revealed by *Thinking, Fast and Slow*. Every step is designed around what the brain likes: first make the brain fall in love, then make it remember, then make it apply.
 
-## 触发条件 / Trigger Conditions
+**语言 / Language**：默认中文讲解，可随时要求全文切换英文；关键术语保持中英对照。/ Chinese by default; switch fully to English on request; key terms always bilingual.
 
-- 用户要求阅读、总结、深度讲解某本书或某个复杂领域。
-- 用户希望不仅"看懂"，还要"记住"并能"跨界应用"。
+---
 
-- The user asks to read, summarize, or deeply explain a book or a complex field.
-- The user wants not just to "understand," but to "remember" and "apply across domains."
+## 零、设计哲学：顺着大脑工作 / Design Philosophy: Work With the Brain, Not Against It
 
-## 核心认知设计原则 / Core Cognitive Design Principles
+以下全部来自《思考，快与慢》，是本 skill 每一步设计的依据：
+Everything below comes from *Thinking, Fast and Slow* and justifies every design choice in this skill:
 
-1. **生成效应与合意困难（《认知天性》）/ Generation Effect & Desirable Difficulties (*Make It Stick*)**
-- **先问后教 / Ask before teaching**：在给出答案前，先抛出反常识问题让用户"猜"，激发大脑的结构化空缺。/ Before giving answers, pose counter-intuitive questions and let the user guess, creating a structured gap in the mind.
-- **主动检索 / Active retrieval**：放弃无脑划线，用有一定挑战性的情境题强迫大脑"费力提取"，形成长时记忆。/ Drop mindless highlighting; use challenging scenario questions to force effortful retrieval and build long-term memory.
-2. **多元思维模型网格（查理·芒格）/ Latticework of Mental Models (Charlie Munger)**
-- **跨学科挂钩 / Cross-disciplinary hooks**：把新知识强行与基础学科的普世模型（如：数学的复利、工程学的冗余备份、物理学的临界质量、心理学的逆向思考）建立联结。/ Force connections between new knowledge and universal models from basic disciplines (e.g. compounding in math, redundancy in engineering, critical mass in physics, inversion in psychology).
-- **反过来想（Inversion）/ Invert, always invert**：不仅讲"如何做才能成"，必讲"如何做一定败"。/ Don't just teach "how to succeed" — always teach "how to guarantee failure."
-3. **快慢思考交替（《思考，快与慢》）/ Alternating Fast & Slow Thinking (*Thinking, Fast and Slow*)**
-- 用 System 1（直觉/画面/故事）降低入门阻力，用 System 2（反思/跨界映射/测试）夯实理解深度。/ Use System 1 (intuition/images/stories) to lower the entry barrier, and System 2 (reflection/cross-domain mapping/testing) to deepen understanding.
+| 大脑特性 / Brain trait | 设计对策 / Design response |
+|---|---|
+| **快思考 System 1**：靠联想、故事、画面做判断，喜欢流畅、不爱费力 / Runs on association, story, imagery; loves fluency, hates effort | 用**故事、比喻、视觉**包裹概念，制造"认知流畅性 (cognitive ease)"，让理解零阻力 / Wrap concepts in story, metaphor, visuals for cognitive ease — zero-friction understanding |
+| **慢思考 System 2**：费力、专注、擅长逻辑，但极易偷懒 / Effortful, focused, logical — but chronically lazy | 用**检索测试**和**逆向思考**把它"骗"出来干活，且每次只干一件 / Trick it into working via retrieval tests and inversion — one job at a time |
+| **所见即全部 WYSIATI**：大脑只用最容易想到的信息下判断 / The brain judges from whatever comes to mind most easily | 开篇先给**全书地图**，防止碎片信息主导判断 / Give the full-book map first, so fragments never dominate judgment |
+| **启动效应 Priming**：前置信息会悄悄塑造后续理解 / Earlier inputs quietly shape later understanding | 每个概念讲解前先埋**钩子问题/画面**，为故事铺路 / Plant a hook question/image before each concept to pave the way for its story |
+| **联想连贯 Associative coherence**：大脑自动把信息编成连贯叙事 / The brain auto-weaves information into coherent narratives | 最终用**一个长篇故事**收束全书——这正是大脑最爱的格式 / Close with one long story — the brain's favorite format |
+| **认知负荷有限**：一次塞太多，大脑直接宕机 / Limited cognitive load: overload it and it shuts down | 一次只讲**一个概念、一个故事**；测试与讲解交替进行 / One concept, one story at a time; alternate teaching with testing |
 
-## 执行步骤与输出结构 / Execution Steps & Output Structure
+**内容流设计（大脑视角）/ Content flow (from the brain's perspective)**：
+`钩子 → 地图 → 故事 → 测试 → 长故事`
+`Hook → Map → Stories → Tests → Grand Story`
+——先被吸引（System 1 上线），再见全貌（WYSIATI 被满足），再潜移默化（流畅性拉满），再费力提取（System 2 被激活），最后融会贯通（联想连贯封神）。
 
-### 第一步：逆向提问破冰（激发"生成效应"）/ Step 1: Counter-Intuitive Ice-Breaker (Trigger the Generation Effect)
+---
 
-- **反常识提问 / Counter-intuitive question**：开篇先不讲理论，直接抛出一个与常识相悖的痛点问题或极端情境，邀请用户思考（"如果你遇到这种情况，你会怎么做？"）。/ Don't start with theory. Open with a pain-point question or extreme scenario that defies common sense, and invite the user to think ("What would you do in this situation?").
-- **极简破题（大白话+视觉Hook）/ One-line breakthrough (plain words + visual hook)**：用一句话精炼全书灵魂，并用一个具象的生活画面作为认知锚点。/ Distill the book's soul into one sentence, anchored by a vivid everyday image.
+## 一、三大核心功能 / Three Core Functions
 
-### 第二步：核心概念拆解 x 多元思维模型（知识格栅化）/ Step 2: Core-Concept Breakdown × Mental Models (Build the Latticework)
+### 功能 1：全书结构与核心精髓总览 / Function 1: Book Architecture & Essence Overview
 
-针对书中拆解出的 3-5 个核心概念，按以下结构展开：/ For each of the 3–5 core concepts distilled from the book, follow this structure:
+用费曼学习法的精髓——"如果你不能一页讲清，你就没真懂"——输出：
 
-1. `[概念名称]` ➔ `[小学生级别的一句话解释]` / `[Concept name]` ➔ `[one-line explanation a 10-year-old would get]`
-2. ****：将该概念与一个底层思维模型（如：复利效应、工程冗余备份、双轨分析、马太效应、安全边际等）强行挂钩并解释共性。/ Force-map the concept onto a foundational mental model (e.g. the Compounding Effect, engineering redundancy, two-track analysis, the Matthew Effect, margin of safety) and explain what they share.
-3. ****：如果想彻底在这个概念上失败，应该怎么做？（指出致命误区）。/ How would you guarantee total failure on this concept? (Name the fatal pitfalls.)
-4. ****：编造贴近生活的生动短故事，让概念具象化。/ Invent a vivid, true-to-life short story that makes the concept concrete.
+- **一句话灵魂**：整本书压缩成一句话（小学生能听懂版 + 英文版）。
+- **全书地图**：章节结构的可视化呈现（Markdown 表格 / Mermaid 思维导图 / ASCII 结构图）。
+- **核心论点 3–5 个**：作者真正想证明的几件事，每条配一个生活类比。
+- **作者的思维底牌**：作者依赖的底层思维模型是什么（如：达尔文用"自然选择"解释一切）。
 
-### 第三步：合意困难检索测试（巩固神经回路）/ Step 3: Desirable-Difficulty Retrieval Test (Strengthen Neural Pathways)
+### 功能 2：全概念逐个故事化 / Function 2: Every Concept Becomes a Story
 
-- 为刚刚讲解的核心概念设计 1-2 道**情境应用题**（非死记硬背的定义题）。/ Design 1–2 **scenario-based application questions** for the concepts just taught (never rote-definition questions).
-- 题目必须带有轻微的"陷阱"或"迷惑性"，促使大脑调动系统 2 进行深度检索。/ Each question must carry a slight "trap" or misdirection, forcing the brain into deep System-2 retrieval.
-- 附上带解析的答案，并在解析中点透认知盲区。/ Provide answers with analysis that exposes the exact cognitive blind spot.
+把书中出现的**全部概念**找出来（不只是重点），逐个处理：
 
-### 第四步：认知冗余备份（多媒体扩展）/ Step 4: Cognitive Redundancy Backup (Multimedia Extension)
+1. **概念全清单 / Concept inventory**（表格呈现，含掌握度追踪列）：
 
-- 基于"工程学冗余备份"理念，为单一的文字阅读提供多感官备份：/ Following the engineering idea of redundancy, back up plain reading with multiple senses:
-- **音频/视觉备份 / Audio-visual backup**：推荐高质量的播客、TED演讲、或纪录片（附带核心看点）。/ Recommend high-quality podcasts, TED talks, or documentaries (with key takeaways).
-- **知识图谱备份 / Knowledge-map backup**：提供核心逻辑的 Markdown 表格或关系图解。/ Provide Markdown tables or relationship diagrams of the core logic.
+| # | 概念 Concept | 一句话 One-liner | 故事 Story | 掌握度 Mastery |
+|---|---|---|---|---|
+| 1 | … | … | ✅ 已编 | ⭐⭐⭐⭐☆ |
 
-### 第五步：多元模型交响曲（全书精髓长故事）/ Step 5: Symphony of Models (The Book's Essence as a Long Story)
+2. **每个概念 = 一个短故事/寓言**：300 字以内的生活化短故事或寓言，让读者在情节中**潜移默化**地掌握概念含义——先懂故事，再点破概念，做到"原来如此"的顿悟感。
+3. **每个概念强制挂钩一个芒格思维模型**（复利、冗余、逆向、安全边际、马太效应……），并做一次**逆向思考**："想在这个概念上彻底失败该怎么做？"
+4. **多媒体点缀**：抽象概念配示意图/信息图（AI 生成或推荐现成图片，附超链接）。
 
-- 构建一个主线清晰、有角色与情节发展的情境长篇故事。/ Build a full-length situational story with a clear arc, characters, and plot.
-- 将前面拆解的所有概念与思维模型，如同"编织网格"一样巧妙自然地嵌入情节推演中。/ Weave every concept and mental model from the earlier steps into the plot like a latticework, naturally and artfully.
-- **故事结局的顿悟 / The closing epiphany**：让读者看完故事后，不仅掌握了这本书的内容，还学会了如何用多学科视角看世界。/ By the end, the reader should not only master the book's content but also see the world through a multi-disciplinary lens.
+### 功能 3：整书长篇故事整合 / Function 3: The Whole Book as One Long Story
+
+- 把功能 2 的所有概念和故事，像"编织网格"一样嵌入**一个主线清晰、有角色、有冲突、有反转的长篇叙事**中。
+- 读者读完故事 = 重温全书一遍，且每个概念在情节中各就其位、互相咬合。
+- **结局顿悟**：故事结尾让读者意识到——自己已经掌握了整本书的思维方式，而不只是记住了几个词。
+
+---
+
+## 二、多媒体呈现规范 / Multimedia Presentation Spec
+
+**图文并茂是硬性要求，不是点缀。/ Rich media is mandatory, not decorative.**
+
+- **图片 Images**：每个核心概念至少配一张示意图/信息图/隐喻图。可用 AI 生成，或推荐网络现成图片（附超链接和一句话看点）。Markdown 图片语法直接嵌入。
+- **音频 Audio**：推荐相关播客单集（附超链接+收听指引：从第几分钟听起）；或建议将关键章节转为 TTS 音频"听书"。
+- **视频 Video**：推荐 TED 演讲、纪录片、作者访谈（附超链接+观看指引：重点看哪几分钟、带着什么问题看）。
+- **超链接 Hyperlinks**：所有外部推荐必须附可点击链接；概念之间互相链接，形成站内知识网。
+- **排版美学 Typography**：Markdown 表格、引用块 `>`、折叠 `<details>`、高亮、Emoji 导航——阅读体验如丝般顺滑。
+
+---
+
+## 三、概念掌握度检索小测试 / Concept-Mastery Retrieval Tests
+
+测试不是考试，是**给大脑的健身动作**。每个概念按三级设计，讲解完 2–3 个概念就测一次：
+
+- **L1 再认级（认出它）/ Recognition**：选择题、配对题——"下面哪个是 XX 概念的例子？"
+- **L2 回忆级（讲清它）/ Recall**：情境应用题（带轻微陷阱/迷惑性）——"如果你是故事里的主人公，你会怎么做？为什么？"
+- **L3 迁移级（用活它）/ Transfer**：跨界新场景——"把这个概念搬到，会发生什么？"
+
+每道题附**带解析的答案**，解析必须点透认知盲区。全部测试完成后输出**掌握度报告**：
+
+| 概念 | L1 | L2 | L3 | 状态 |
+|---|---|---|---|---|
+| … | ✅ | ✅ | 🔶 | 接近掌握，3 天后复测 L3 |
+
+并给出**间隔重复复习计划**（1 天 / 3 天 / 7 天后分别复习什么）。
+
+---
+
+## 四、完整执行流程 / Full Execution Workflow
+
+1. **逆向提问破冰**：反常识问题 + 视觉钩子，激活 System 1，制造认知空缺。
+2. **全书一页总览**：一句话灵魂 + 全书地图 + 核心论点 + 作者思维底牌（功能 1）。
+3. **概念全清单盘点**：列出全书所有概念，建表追踪。
+4. **逐概念故事化**：每个概念 = 短故事/寓言 + 芒格模型映射 + 逆向思考 + 多媒体（功能 2）。
+5. **分段小测试**：每 2–3 个概念做一次 L1–L3 测试。
+6. **整书长篇故事**：全部概念编织成一个长篇叙事，结局顿悟（功能 3）。
+7. **总测试 + 掌握度报告 + 复习计划**：全书 L1–L3 总测，输出掌握度表和间隔重复计划。
 
 ## 约束与要求 / Constraints & Requirements
 
-- **绝对降维 / Radical simplification**：严禁干瘪堆砌专业术语；若出现专业名词，必须即刻附带生活常识类比。/ No dry piling of jargon; every technical term must come with an everyday analogy, immediately.
-- **跨界强制性 / Mandatory cross-domain mapping**：每个核心概念必须至少关联一个芒格的经典思维模型。/ Every core concept must map onto at least one classic Munger mental model.
-- **排版美学 / Formatting aesthetics**：多用 Markdown 表格、引用块 `>`、高亮、以及 Emoji 视觉引导，确保阅读体验如丝般顺滑。/ Use Markdown tables, blockquotes `>`, highlights, and emoji wayfinding generously — reading should feel silky smooth.
+- **绝对降维**：严禁干瘪堆砌术语；专业名词必须即刻配生活类比。
+- **故事强制性**：每个概念必须有一个短故事；短故事 ≤ 300 字；长故事分章节、有反转。
+- **跨界强制性**：每个概念至少关联一个芒格思维模型 + 一次逆向思考。
+- **多媒体强制性**：核心概念配图；外部推荐一律附超链接+看点指引。
+- **测试全覆盖**：全部概念都要经过 L1–L3 测试，无一遗漏。
+- **大脑友好**：一次只讲一个概念；信息密度服从认知负荷；System 1 先行、System 2 随后。
